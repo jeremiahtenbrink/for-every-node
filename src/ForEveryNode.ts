@@ -13,7 +13,7 @@ export function callForEveryNode( el: HTMLElement,
                                   cb: ( el: HTMLElement | ChildNode ) => {} ): void {
   
   const queue = new Queue();
-  queue.enqueue( el );
+  queue.enqueue(el)
   
   while ( !queue.isEmpty() ) {
     const currentEl = queue.dequeue();
