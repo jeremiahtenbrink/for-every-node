@@ -12,7 +12,8 @@
   <a href="https://github.com/jeremiahtenbrink/for-every-node/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/jeremiahtenbrink/for-every-node" />
   </a>
-
+<a href="https://codeclimate.com/github/jeremiahtenbrink/for-every-node/maintainability"><img src="https://api.codeclimate.com/v1/badges/ceb1303dc87248c10ab0/maintainability" /></a>
+<a href="https://codeclimate.com/github/jeremiahtenbrink/for-every-node/test_coverage"><img src="https://api.codeclimate.com/v1/badges/ceb1303dc87248c10ab0/test_coverage" /></a>
 
 </p>
 
@@ -21,8 +22,14 @@ Function that will call a callback for every child node. Uses a queue, not recur
 
 ## Install
 
-```sh
+### With Npm
+```shell script
 npm install @jeremiah_tenbrink/for-every-node
+```
+
+### With Yarn
+```shell script
+yarn add @jeremiah_tenbrink/for-every-node
 ```
 
 ## Author

@@ -1,6 +1,6 @@
 {
   "name": "@jeremiah_tenbrink/for-every-node",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "private": false,
   "author": "Jeremiah Tenbrink",
   "description": "Function that will call a callback for every child node. Uses a queue, not recursion.",
@@ -17,13 +17,21 @@
     "run": "npm-run-all docs build publish-repo",
     "build": "tsc",
     "docs": "typedoc",
-    "publish-repo": "npm publish --access public"
+    "publish-repo": "npm publish --access public",
+    "test": "jest",
+    "githubTest": "CI=true npm run coverage || true",
+    "coverage": "jest --coverage"
   },
   "license": "MIT",
   "dependencies": {
-    "@jeremiah_tenbrink/queue": "^1.0.3"
+    "@jeremiah_tenbrink/queue": "^1.0.6"
   },
   "devDependencies": {
-    "npm-run-all": "^4.1.5"
+    "@testing-library/dom": "^7.21.1",
+    "@types/jest": "^26.0.5",
+    "jest": "^26.1.0",
+    "npm-run-all": "^4.1.5",
+    "ts-jest": "^26.1.3",
+    "typescript": "^3.9.7"
   }
 }

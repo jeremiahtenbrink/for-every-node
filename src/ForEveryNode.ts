@@ -1,7 +1,7 @@
-import {Queue} from "@jeremiah_tenbrink/queue";
+import { Queue } from "@jeremiah_tenbrink/queue";
 
 /**
- * ## callForEveryNode
+ *  @type {function} callForEveryNode
  *
  * Calls the callback function for every child node in the element.
  * Implements Queue not recursive function calls.
@@ -10,10 +10,10 @@ import {Queue} from "@jeremiah_tenbrink/queue";
  * @param {(el: HTMLElement | ChildNode ) => void} cb
  */
 export function callForEveryNode( el: HTMLElement,
-                                  cb: ( el: HTMLElement | ChildNode ) => {} ): void {
+                                  cb: ( el: ( HTMLElement | ChildNode ) ) => void ): void {
   
   const queue = new Queue();
-  queue.enqueue(el)
+  queue.enqueue( el )
   
   while ( !queue.isEmpty() ) {
     const currentEl = queue.dequeue();
