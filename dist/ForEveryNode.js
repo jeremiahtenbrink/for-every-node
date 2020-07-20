@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.callForEveryNode = void 0;
 var queue_1 = require("@jeremiah_tenbrink/queue");
 /**
- * ## callForEveryNode
+ *  @type {function} callForEveryNode
  *
  * Calls the callback function for every child node in the element.
  * Implements Queue not recursive function calls.

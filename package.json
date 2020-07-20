@@ -1,6 +1,6 @@
 {
   "name": "@jeremiah_tenbrink/for-every-node",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": false,
   "author": "Jeremiah Tenbrink",
   "description": "Function that will call a callback for every child node. Uses a queue, not recursion.",

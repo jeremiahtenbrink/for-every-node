@@ -18,7 +18,8 @@
 </p>
 
 
-Function that will call a callback for every child node. Uses a queue, not recursion.
+Function that will call a callback for every child node. Uses a <a href="https://github.com/jeremiahtenbrink/queue">queue</a>
+, not recursion.
 
 ## Install
 
@@ -30,6 +31,16 @@ npm install @jeremiah_tenbrink/for-every-node
 ### With Yarn
 ```shell script
 yarn add @jeremiah_tenbrink/for-every-node
+```
+
+## Usage
+
+```javascript
+import {callForEveryNode} from "@jeremiah_tenbrink/for-every-node";
+
+callForEveryNode(htmlElementWithChildNodes, (el => {
+console.log(el)
+}))
 ```
 
 ## Author
